@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  const $container = $('#container');
-  const $table = $('#stickyT');
+  const $container = $("#container");
+  const $table = $("#stickyT");
   const $thead = $("#stickyT thead tr th");
   const $theadToFreeze = $("#stickyT thead tr:eq(0) th:nth-child(-n + 5), #stickyT thead tr:eq(1) th:first-child");
-  const $tfoot = $('#stickyT tfoot tr td');
-  const $tfootToFreeze = $('#stickyT tfoot tr td:nth-child(-n + 5)');
+  const $tfoot = $("#stickyT tfoot tr td");
+  const $tfootToFreeze = $("#stickyT tfoot tr td:nth-child(-n + 5)");
   const $tbodyToFreeze = $("#stickyT tbody tr td:nth-child(-n + 5)");
 
   let sH = 0;
