@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+#stickyT {
+    width: 2000px;
+    height: 1000px;
+}
+
+#stickyT tbody tr td {
+    position: relative;
+    z-index: -1;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#stickyT thead tr th {
+    background-color: red;
+}
+
+#stickyT thead tr:first-child th:nth-child(-n + 5) {
+    z-index: 2;
+    position: relative;
+}
+
+#stickyT thead tr:nth-child(2) th:first-child {
+    z-index: 2;
+    position: relative;
+}
+
+#stickyT tbody tr td:nth-child(-n + 5) {
+    background-color: blue;
+    z-index: 1;
+    position: relative;
+}
+
+#stickyT tfoot tr td {
+    background-color: yellow;
+}
+
+#stickyT tfoot tr td:nth-child(-n + 5) {
+    z-index: 2;
+    position: relative;
+}
+
+/*#stickyT tfoot tr {
+    position: absolute;
+    left: 2px;
+    right: 15px;
+    background-color: yellow;
+    top: 465px;
+    z-index: 2;
+}
+
+#stickyT tfoot td {
+    display: inline-block;
+}*/
+
+/*
+html, body {
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    max-height: 400px;
+    overflow: auto;
+}
+
+table {
+    width: 2000px;
+}
+
+table th, table td {
+    border: 1px solid #999999;
+    background-color:white;
+    white-space:nowrap;
+}
+
+table td{
+    z-index:-1;
+    position:relative;
+}
+table tr td:first-child{
+    z-index:1;
+    position:relative;
+}
+table th:first-child{
+    position:relative;
+    z-index:2;
+}
+
+table tfoot tr td {
+    position: relative;
+    bottom: 0;
+}*/
